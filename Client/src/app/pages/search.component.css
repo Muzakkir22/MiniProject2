@@ -1,0 +1,65 @@
+body{
+    background: black;
+    margin: 0;
+  
+   }
+  .menu{
+    width: 100%;
+    background: skyblue;
+    overflow: auto;
+  }
+  .menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 60px;
+  
+  }
+  .menu li{
+    float: left;
+  }
+  .menu ul li a{
+    background: skyblue;
+    text-decoration: none;
+    width: 130px;
+    display: block;
+    text-align: center;
+    color: darkblue;
+    font-size: 18px;
+    font-family: sans-serif;
+    letter-spacing: 0.5px;
+  
+  }
+  .menu li a:hover{
+    color: #fff;
+    opacity: 0.5px;
+    font-size: 19px;
+  
+  }
+  .search-form{
+    margin-top: 15px;
+    float: right;
+    margin-right: 100px;
+  }
+  input[type=text]{
+    padding: 7px;
+    border: none;
+    font-size: 16px;
+    font-family: sans-serif;
+    margin-top: 15px;
+  
+  }
+  button{
+    float: right;
+    background: orangered;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    position: relative;
+    padding: 7px;
+    font-family: sans-serif;
+    border: none;
+    font-size: 16px;
+    margin-right: 226px;
+    margin-top: 15px;
+  }

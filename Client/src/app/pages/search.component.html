@@ -1,0 +1,31 @@
+<nav class="menu">
+  <ul>
+   <li><a href="">Home</a></li>
+   <li><a href="">List</a></li>
+   <li><a href="">About</a></li>
+  </ul>
+<!-- <form>
+ <input type="text" placeholder="Search Hotel Name">
+ <button>Search</button>
+</form>
+ </nav> -->
+
+<form [formGroup]="searchForm" (ngSubmit)="search()">
+<div class="content">
+    <div class="search">
+      <input formControlName="searchBar" type="text" class="search__input" aria-label="search" placeholder="Search Hotel Name">
+      <button class="search__submit" aria-label="submit search">Search</button>
+      <!-- <button class="search__submit" aria-label="submit search"><i class="fas fa-search"></i>Search</button> -->
+    </div>
+  </div>
+</form>
+
+<div *ngIf="searchModel !== undefined">
+
+    <div *ngFor="let model of searchModel; let i = index">
+        <div style="width: max-content;" >{{model.name}} {{model.rating}} </div>
+        <button (click)="getDetails(i)">Get Details</button>
+        <br><br>
+    </div>
+</div>
+</nav>
